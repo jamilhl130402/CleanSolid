@@ -1,56 +1,53 @@
+
 (() => {
 
-    // Arreglo de temperaturas en Celsius
-    const celsiusTemperatures = [33.6, 12.34];
+    // arreglo de temperaturas celsius
+    const arrayOfNums = [33.6, 12.34];
 
-    // Dirección IP del servidor
-    const serverIpAddress = '123.123.123.123';
+    // Dirección ip del servidor
+    const ip = '123.123.123.123';
 
     // Listado de usuarios
-    const users = [
-        { id: 1, email: 'fernando@google.com' },
-        { id: 2, email: 'juan@google.com' },
-        { id: 3, email: 'melissa@google.com' }
-    ];
+    const people = [{id: 1, email: 'fernando@google.com'},{ id: 2, email: 'juan@google.com' }, { id: 3, email: 'melissa@google.com' }];
 
-    // Listado de correos electrónicos
-    const userEmails = users.map(user => user.email);
+    // Listado de emails de los usuarios
+    const emails = people.map( u => u.email );
 
-    // Variables booleanas de un videojuego
-    const isJumping = false;
-    const isRunning = true;
-    const hasNoItems = true;
-    const isLoading = false;
+    // Variables booleanas de un video juego
+    const jump = false;
+    const run = true;
+    const noTieneItems = true;
+    const loading = false;
 
-    // Tiempo inicial
-    const startTime = new Date().getTime();
+    // Otros ejercicios
+    // tiempo inicial
+    const start = new Date().getTime();
+    //....
+    // 3 doritos después
+    //...
+    // Tiempo al final
+    const end = new Date().getTime() - start;
 
-    // ...
 
-    // Tiempo transcurrido
-    const elapsedTime = new Date().getTime() - startTime;
-
+    // Funciones
     // Obtiene los libros
-    function getBooks() {
+    function book() {
         throw new Error('Function not implemented.');
     }
 
-    // Obtiene libros desde una URL
-    function getBooksByUrl(url: string) {
+    // obtiene libros desde un URL
+    function BooksUrl( u: string) {
+        throw new Error('Function not implemented.');
+    }
+    
+    // obtiene el área de un cuadrado basado en sus lados
+    function areaCuadrado( s: number ) {
         throw new Error('Function not implemented.');
     }
 
-    // Obtiene el área de un cuadrado basado en sus lados
-    function calculateSquareArea(sideLength: number) {
-        throw new Error('Function not implemented.');
-    }
-
-    // Imprime el trabajo si está activo
-    function printJobIfActive() {
+    // imprime el trabajo
+    function printJobIfJobIsActive() {
         throw new Error('Function not implemented.');
     }
 
 })();
-
-
-
